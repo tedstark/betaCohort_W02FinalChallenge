@@ -22,8 +22,10 @@ public class BankAccount {
             }
 
     public double deposit(double amount) {
-        newBalance = baBalance + amount;
-        return newBalance;
+        this.baBalance += amount;
+        return baBalance;
+        //newBalance = baBalance + amount;
+        //return newBalance;
     }
     public double withdraw(double amount) {
         baBalance = baBalance - amount;
